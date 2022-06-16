@@ -53,7 +53,7 @@ public class AmazonSelenium {
 				WebElement weSearchButton = driver.findElement(By.xpath("//input[@id='nav-search-submit-button']"));
 				weSearchButton.click();
 			
-				/* milestone 4 - count search result */		
+				/* count search result */		
 				java.util.List<WebElement> ResList = driver.findElements(By.xpath("//*[@data-component-type='s-search-result']"));
 				System.out.println("Total search result are: " + ResList.size());
 				
@@ -73,7 +73,7 @@ public class AmazonSelenium {
 				}
 				
 				
-				/* milestone 5 - capture screen */		
+				/* capture screen */		
 				// Note: remember to get the io jar https://mvnrepository.com/artifact/commons-io/commons-io/2.6
 				TakesScreenshot TsObj = (TakesScreenshot) driver;
 				
@@ -87,7 +87,7 @@ public class AmazonSelenium {
 				}
 				
 				
-				/* milestone 6 [extra]- list the price & name of the product */		
+				/* list the price & name of the product */		
 				java.util.List<WebElement> ProductNameList = driver.findElements(By.xpath("//*[@data-component-type='s-search-result']//span[@class='a-size-medium a-color-base a-text-normal']"));
 				java.util.List<WebElement> ProductPriceList = driver.findElements(By.xpath("//*[@data-component-type='s-search-result']//span[@class='a-price-whole']"));
 				
