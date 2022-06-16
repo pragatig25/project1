@@ -94,7 +94,7 @@ public class AmazonSelenium {
 				System.out.println("Product List: [" + SearchVal + "] from category [" + Category + "]"  );
 				System.out.println("---------------------------------------------------------");
 				for ( int i = 0; i < ProductNameList.size(); i++ ) {
-					System.out.println( (i+1) + ". Rs" + ProductPriceList.get(i).getText() + " - " + ProductNameList.get(i).getText());
+					System.out.println( (i+1) + ". $" + ProductPriceList.get(i).getText() + " - " + ProductNameList.get(i).getText());
 				}
 				
 				
